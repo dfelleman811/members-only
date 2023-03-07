@@ -1,0 +1,17 @@
+<h1>posts index</h1>
+
+
+<% @posts.each do |post| %>
+
+<section class="<%= post.id %>">
+
+    <h4><%= post.title %></h4>
+
+    <% if current_member %>
+        <p>by: <%= post.member.name %></p>
+    <% end %>
+    
+    <p><%= post.text %></p>
+</section>
+
+<% end %>

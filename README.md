@@ -1,24 +1,7 @@
-# README
+# members-only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Demo application using Devise for authentication and authorization
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## User Stories
+- Any user can view posts
+- Only Members can see who is the author

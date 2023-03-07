@@ -11,6 +11,23 @@
   </head>
 
   <body>
+
+
+    <% flash.each do |name, msg| %>
+
+    <div class="<%= name %>">
+      <%= msg %>
+    </div>
+    <% end %>
+    <%= link_to "Home", root_path %> |
+    <%= link_to "All Posts", posts_path %> |
+    <% if current_member %>
+      <%= link_to "Logout", destroy_member_session_path, data: { turbo_method: :delete } %> 
+    <% else %>
+      <%= link_to "Login", new_member_session_path %> 
+    <% end %>
+    
+
     <%= yield %>
   </body>
 </html>

@@ -21,3 +21,11 @@
 - This app was created using Rails 7.0.4.2
 
 ### 
+
+
+## Tests
+- This demo version uses [minitest](http://docs.seattlerb.org/minitest/)
+- There are just a few validation checks for the Member model
+- Run the tests by executing `rails test` in the console. 
+- If you get any errors about tables not existing, make sure you've run your migrations
+    - if you have, you can try to execute `rails db:test:prepare` in the terminal
